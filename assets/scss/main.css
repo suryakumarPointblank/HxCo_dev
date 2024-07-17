@@ -4488,6 +4488,9 @@ textarea {
   font-size: 24px;
   line-height: 0;
 }
+.services__tab-wrap .nav-link::after{
+  content: "" !important;
+}
 .services__tab-wrap .nav-link.active {
   background: var(--tg-theme-primary);
   color: var(--tg-color-white-default);
