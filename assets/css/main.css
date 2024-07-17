@@ -2315,6 +2315,10 @@ textarea {
 /*=============================
     04. Banner
 ===============================*/
+.w-screen{
+  width: 100vw;
+  width:100dvw;
+}
 .banner-bg {
   background-size: cover;
   background-position: center;
