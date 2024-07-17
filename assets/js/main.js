@@ -114,7 +114,27 @@ $(".menu-tigger").on("click", function () {
 $(".menu-close, .offCanvas__overly").on("click", function () {
 	$(".offCanvas__info, .offCanvas__overly").removeClass("active");
 });
-
+/*=============================================
+	=          Homepage Banner              =
+=============================================*/
+var swiper3 = new Swiper(".slider-homepage-banner", {
+    spaceBetween: 0,
+    // effect: "fade",
+    loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+    },
+     // Navigation arrows
+     navigation: {
+        nextEl: '.project-button-next',
+        prevEl: '.project-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination-testimonials',
+        clickable: true
+    },
+});
 /*=============================================
 	=          brand active              =
 =============================================*/
