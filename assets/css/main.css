@@ -2315,9 +2315,24 @@ textarea {
 /*=============================
     04. Banner
 ===============================*/
+.flex {
+  display: flex;
+}
+.justify-end{
+  justify-content: end;
+}
 .w-screen{
   width: 100vw;
   width:100dvw;
+}
+.w-100p{
+  width:100%;
+}
+.w-98p{
+  width:98%;
+}
+.mil-thin{
+  font-weight: 300;
 }
 .banner-bg {
   background-size: cover;
@@ -5267,6 +5282,22 @@ textarea {
 }
 .services__tab-wrap .nav-link::after {
   content: "\f10a";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: flaticon;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0;
+}
+.services__tab-wrap .nav-link::after {
+  content: "\f054" !important;
+  color: white !important;
   position: absolute;
   top: 50%;
   right: 20px;
@@ -14588,3 +14619,13 @@ blockquote p {
     right: -15px;
   }
 }/*# sourceMappingURL=main.css.map */
+
+.nav-item-partners button{
+  color: white !important;
+  background-color: unset !important;
+}
+.nav-item-partners button{
+  color: white !important;
+  background-color: unset !important;
+  background: unset !important;
+}
