@@ -2321,6 +2321,13 @@ textarea {
 .justify-end{
   justify-content: end;
 }
+.justify-center{
+  justify-content: center;
+}
+.items-center{
+  align-items: center;
+}
+
 .w-screen{
   width: 100vw;
   width:100dvw;
@@ -2331,8 +2338,32 @@ textarea {
 .w-98p{
   width:98%;
 }
+.gap-0{
+  gap: 0;
+}
 .mil-thin{
   font-weight: 300;
+}
+
+
+/* Partners  */
+
+
+
+.partners-nav-tab{
+  border-right: solid 1px rgba(255, 255, 255, 0.1) ; 
+}
+.border-bottom-white{
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1); 
+}
+.services__tab-wrap .nav-link:hover {
+  border-right: solid 2px rgba(255, 255, 255, 0.8) !important;  
+}
+.services__tab-wrap .nav-link.active {
+  border-right: solid 2px rgba(255, 255, 255, 0.8) !important;  
+}
+.services__tab-wrap .nav-link{
+  border-radius: 0 !important;
 }
 .banner-bg {
   background-size: cover;
@@ -4835,6 +4866,16 @@ textarea {
     padding: 30px 25px;
   }
 }
+.partners-single-tab{
+  background: unset;
+  color: white;
+  justify-content: start;
+  align-items: start;
+}
+.partners-single-tab-heading{
+  color: white !important;
+  margin-top: 10px;
+}
 .services__item-five {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
@@ -5224,7 +5265,7 @@ textarea {
   }
 }
 .services__tab-wrap .nav-item {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 .services__tab-wrap .nav-item:last-child {
   margin-bottom: 0;
@@ -5251,7 +5292,7 @@ textarea {
   color: var(--tg-color-white-default);
   padding: 15px 55px 15px 25px;
   position: relative;
-  width: 330px;
+  width: 240px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -5281,7 +5322,7 @@ textarea {
   }
 }
 .services__tab-wrap .nav-link::after {
-  content: "\f10a";
+  content: "\f10b";
   position: absolute;
   top: 50%;
   right: 20px;
@@ -5296,7 +5337,23 @@ textarea {
   line-height: 0;
 }
 .services__tab-wrap .nav-link::after {
-  content: "\f054" !important;
+  /* content: "\f054" !important; */
+  color: white !important;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: flaticon;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0;
+}
+.fa-chevron-right-extension{
+  /* content: "\f054" !important; */
   color: white !important;
   position: absolute;
   top: 50%;
