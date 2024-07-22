@@ -86,9 +86,8 @@
   --tg-fw-light: 300;
 } */
 
-:root {
+/* :root {
   --tg-body-font-family: 'D-DIN', sans-serif;
-  /* --tg-heading-font-family: 'D-DIN', sans-serif; */
 
   --tg-heading-font-family: 'Outfit', sans-serif;
   --tg-icon-font-family: "Font Awesome 5 Free";
@@ -99,6 +98,49 @@
   --tg-heading-color: #1c2e79;
   --tg-theme-primary: #f79500;
   --tg-theme-secondary:  #70dff1;
+  --tg-color-dark-blue: #0e65a3;
+  --tg-color-yellow-light: #FEF6E6;
+  --tg-color-yellow-light-2: #FFFBF3;
+  --tg-color-yellow-light-3: #F5EACD;
+  --tg-color-yellow-light-4: #FDE3B0;
+  --tg-color-white-default: #ffffff;
+  --tg-color-gray-1: #E6EEFF;
+  --tg-color-gray-2: #B8B9DA;
+  --tg-color-gray-3: #ECF6FA;
+  --tg-color-gray-4: #818298;
+  --tg-color-gray-5: #E2E3F1;
+  --tg-color-gray-6: #F7F7F8;
+  --tg-color-dark: #1C1A4A;
+  --tg-color-black-1: #06042E;
+  --tg-color-black-2: #161439;
+  --tg-border-1: #CFDDE2;
+  --tg-border-2: #E6E7F3;
+  --tg-border-3: #C5C6E4;
+  --tg-border-4: #DBE3EB;
+  --tg-border-5: #9597C8;
+  --tg-border-6: #DADBEC;
+  --tg-border-7: #E9E9F0;
+  --tg-border-8: #E08B00;
+  --tg-border-9: #D0D6E1;
+  --tg-fw-extra-bold: 800;
+  --tg-fw-bold: 700;
+  --tg-fw-semi-bold: 600;
+  --tg-fw-medium: 500;
+  --tg-fw-regular: 400;
+  --tg-fw-light: 300;
+} */
+:root {
+  --tg-body-font-family: 'D-DIN', sans-serif;
+
+  --tg-heading-font-family: 'Outfit', sans-serif;
+  --tg-icon-font-family: "Font Awesome 5 Free";
+  --tg-body-font-size: 16px;
+  --tg-body-line-height: 1.5;
+  --tg-heading-line-height: 1.2;
+  --tg-body-color:   #1c2e79;
+  --tg-heading-color: #1c2e79;
+  --tg-theme-primary: #f79500;
+  --tg-theme-secondary:  #0e65a3;
   --tg-color-dark-blue: #0e65a3;
   --tg-color-yellow-light: #FEF6E6;
   --tg-color-yellow-light-2: #FFFBF3;
@@ -4759,6 +4801,13 @@ textarea {
   background-size: cover;
   background-position: center;
   padding: 120px 0 90px;
+}
+.services__area-three{
+  background: var(--tg-heading-color);
+  padding: 120px 0 90px;
+  position: relative;
+  z-index: 1;
+
 }
 @media (max-width: 767.98px) {
   .services__bg-three {
