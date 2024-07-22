@@ -39,6 +39,10 @@
 /*  01. Theme Default CSS
 ==============================================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'D-DIN';
+  src: url('fonts/D-DIN.OTF') format('opentype');
+}
 /* :root {
   --tg-body-font-family: 'Inter', sans-serif;
   --tg-heading-font-family: 'Outfit', sans-serif;
@@ -83,7 +87,9 @@
 } */
 
 :root {
-  --tg-body-font-family: 'Inter', sans-serif;
+  --tg-body-font-family: 'D-DIN', sans-serif;
+  /* --tg-heading-font-family: 'D-DIN', sans-serif; */
+
   --tg-heading-font-family: 'Outfit', sans-serif;
   --tg-icon-font-family: "Font Awesome 5 Free";
   --tg-body-font-size: 16px;
@@ -1740,6 +1746,9 @@ textarea {
 .tgmenu__action ul li a {
   color: var(--tg-theme-secondary);
   font-size: 14px;
+}
+.color-primary{
+  color: var(--tg-theme-primary)!important;
 }
 .tgmenu__action ul li:first-child {
   margin-left: 0;
@@ -14727,4 +14736,80 @@ blockquote p {
   color: white !important;
   background-color: unset !important;
   background: unset !important;
+}
+.opacity-none{
+  opacity: 0;
+}
+.align-left{
+  align-items: end;
+}
+.justify-end{
+  justify-content: end;
+}
+
+.express_yourself_cta_btn{
+  
+
+}
+.express_yourself_cta_btn {
+  /* width: 40px; */
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  bottom: 5%;
+  right: 50px;
+  font-size: 18px;
+  border-radius: 8px;
+  z-index: 5;
+  color: var(--tg-color-white-default);
+  text-align: center;
+  cursor: pointer;
+  background: var(--tg-theme-primary);
+  transition: 1s ease;
+  border: none;
+}
+@media (max-width: 1199.98px) {
+  .express_yourself_cta_btn {
+    right: 25px;
+    /* bottom: 25px; */
+  }
+}
+@media (max-width: 991.98px) {
+  .express_yourself_cta_btn {
+    right: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .express_yourself_cta_btn {
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+.express_yourself_cta_btn {
+  bottom: 30px;
+}
+@media (max-width: 767.98px) {
+  .express_yourself_cta_btn{
+    bottom: 15px;
+  }
+}
+/* .express_yourself_cta_btn::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+} */
+
+.express_yourself_cta_btn:hover {
+  background: var(--tg-theme-primary);
+  color: var(--tg-color-white-default);
 }
