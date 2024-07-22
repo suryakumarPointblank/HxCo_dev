@@ -41,7 +41,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: 'D-DIN';
-  src: url('fonts/D-DIN.OTF') format('opentype');
+  src: url('.././fonts/D-DIN.OTF') format('opentype');
 }
 /* :root {
   --tg-body-font-family: 'Inter', sans-serif;
@@ -14753,8 +14753,8 @@ blockquote p {
 }
 .express_yourself_cta_btn {
   /* width: 40px; */
-  height: 40px;
-  line-height: 40px;
+  /* height: 40px; */
+  /* line-height: 40px; */
   text-align: center;
   position: fixed;
   bottom: 5%;
