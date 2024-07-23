@@ -14789,6 +14789,9 @@ blockquote p {
 .opacity-none{
   opacity: 0;
 }
+.opacity-80{
+  opacity: 0.8;
+}
 .align-left{
   align-items: end;
 }
@@ -14796,8 +14799,9 @@ blockquote p {
   justify-content: end;
 }
 
-.express_yourself_cta_btn{
-  
+.express_yourself_cta_btn img{
+  max-width: 60px;
+  padding: 10px;
 
 }
 .express_yourself_cta_btn {
