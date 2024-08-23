@@ -103,6 +103,35 @@ $(".search-close-btn").on("click", function () {
     $(".search-popup-overlay").removeClass("search-popup-overlay-open");
 });
 
+/*=============================================
+            =     Navbar      =
+=============================================*/
+
+const sections = document.querySelectorAll('section');
+const navlinks = document.querySelectorAll('.navigation li');
+
+function navScroll(){
+        let currentSection = "home";
+        sections.forEach((section)=>{
+            const sectionTop = section.offsetTop;
+            // console.log("scrollY= ",scrollY, "sectionTop", sectionTop,section.getAttribute('id'));
+            if(scrollY >= sectionTop-50){
+                currentSection = section.getAttribute('id');
+            }
+        })
+        // console.log("currentSection= ",currentSection);
+        navlinks.forEach((item)=>{
+            item.classList.remove('active');
+            const link = item.querySelector('a');
+            // console.log("link href= ",link.getAttribute('href'));
+            if(link.getAttribute('href').includes(currentSection)){
+                item.classList.add('active')
+            }
+        })
+}
+
+window.addEventListener('scroll',navScroll);
+
 
 /*=============================================
 =     Offcanvas Menu      =
