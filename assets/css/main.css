@@ -2491,6 +2491,14 @@ textarea {
   margin-top:120px;
 }
 
+.text-white{
+  color: white !important;
+}
+.mx-20px{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
 .sm-mb-20px-imp{
   margin-bottom: 20px !important;
 }
@@ -12466,8 +12474,13 @@ blockquote p {
   background: var(--tg-color-dark-blue);
 }
 .footer__area-three {
-  background: var(--tg-color-dark-blue);
+  background: #171A7C;
 }
+
+.font-500{
+  font-weight: 500;
+}
+
 .footer__area-four {
   background: var(--tg-color-dark-blue);
   position: relative;
