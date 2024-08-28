@@ -193,6 +193,12 @@ img,
   transition: all 0.3s ease-out 0s;
 }
 
+.no-max-width{
+  max-width: none;
+}
+
+
+
 a,
 button {
   color: var(--tg-theme-primary);
@@ -2468,6 +2474,9 @@ textarea {
 .w-98p{
   width:98%;
 }
+.w-sm-80px{
+  width: 80px !important;
+}
 .gap-0{
   gap: 0;
 }
@@ -2500,6 +2509,21 @@ textarea {
 .px-10px{
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* Values  */
+.value-1 {
+  list-style-image: url('/assets/img/values/collaboration.png');
+  list-style-position: inside;
+  display: inline-block;  
+}
+
+.value-1::marker {
+  width: 80px;
+  height: 80px;
+  /* border-radius: 50%; */
+  background-size: cover;
+  background-image: url('/assets/img/values/collaboration.png');
 }
 /* Partners  */
 
@@ -6798,6 +6822,7 @@ textarea {
 .choose__list-icon-two {
   font-size: 60px;
   line-height: 0;
+  height: 80px;
   color: var(--tg-theme-primary);
   -webkit-transform: translateY(5px) rotateY(0deg);
   -moz-transform: translateY(5px) rotateY(0deg);
