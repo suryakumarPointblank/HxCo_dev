@@ -244,6 +244,14 @@ h6 {
   line-height: var(--tg-heading-line-height);
   text-transform: unset;
 }
+.h5-imp{
+  font-family: var(--tg-heading-font-family) !important;
+  color: var(--tg-heading-color) !important;
+  margin-top: 0px !important;
+  font-weight: var(--tg-fw-bold) !important;
+  line-height: var(--tg-heading-line-height) !important;
+  text-transform: unset;
+}
 
 h1 a,
 h2 a,
@@ -257,24 +265,42 @@ h6 a {
 h1 {
   font-size: 2.5rem;
 }
-
+.h1-imp{
+  font-size: 2.5rem !important;
+}
 h2 {
   font-size: 2rem;
+}
+.h2-imp{
+  font-size: 2rem !important;
 }
 
 h3 {
   font-size: 1.75rem;
 }
+.h3-imp{
+  font-size: 1.75rem !important;
+}
 
 h4 {
   font-size: 1.5rem;
+}
+.h4-imp{
+  font-size: 1.5rem !important;
 }
 
 h5 {
   font-size: 1.25rem;
 }
 
+.h5-imp{
+  font-size: 1.25rem !important;
+}
 h6 {
+  font-size: 1rem;
+}
+
+.h6-img{
   font-size: 1rem;
 }
 
@@ -2420,7 +2446,18 @@ textarea {
 .items-center{
   align-items: center;
 }
-
+.space-between{
+  justify-content: space-between;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
+}
+.relative{
+  position: relative;
+}
 .w-screen{
   width: 100vw;
   width:100dvw;
@@ -2438,7 +2475,32 @@ textarea {
   font-weight: 300;
 }
 
+.mb-120{
+  margin-bottom: 120px;
+}
+.mt-120{
+  margin-top:120px;
+}
 
+.sm-mb-20px-imp{
+  margin-bottom: 20px !important;
+}
+
+.sm-mb-30px-imp{
+  margin-bottom: 30px !important;
+}
+
+.w-30px{
+  width: 30px;
+}
+.h-30px{
+  height: 30px;
+}
+
+.px-10px{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 /* Partners  */
 
 
@@ -4787,6 +4849,60 @@ textarea {
 /*=============================
 	07. Services
 ===============================*/
+
+.service-mask{
+    /* width: 60rem; */
+    background-color: var(--tg-theme-primary);
+    /* border-radius: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.service-img{
+  position: absolute;
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-img img{
+  object-fit: cover;
+  height: auto;
+  width: auto;
+}
+
+.img-shadow{
+  position: absolute;
+  height: 100%;
+  /* width: 100%; */
+  /* top: 0; */
+  right: 0;
+  /* transform: translate(20px,20px); */
+  margin: 40px 40px;
+}
+.gray-shadow{
+  background-color: darkgray;
+  height: 100%;
+  border-radius: 10%;
+}
+.service-img-container{
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10%;
+  position: relative;
+}
+
 .services-bg {
   background-size: cover;
   background-position: center;
@@ -10160,6 +10276,56 @@ textarea {
 /*=============================
     17. Team
 ===============================*/
+.hover-darken {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-darken img {
+  display: block;
+  width: 100%;
+  scale: 0.9;
+  transition: transform 0.6s ease,opacity 0.3s ease;
+}
+
+
+.hover-darken:hover img {
+  transform: scale(1.05); /* Zoom in on hover */
+}
+.hover-darken::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background-color 0.5s ease;
+}
+
+.hover-darken:hover::before {
+  background-color: rgba(0, 0, 0, 0.3); /* Darken on hover */
+}
+
+.linkedin-icon {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  color: white; /* White LinkedIn icon */
+  font-size: 30px; /* Adjust size as needed */
+  color: var(--tg-color-dark-blue);
+}
+
+.hover-darken:hover .linkedin-icon {
+  opacity: 1; /* Show on hover */
+  color: blue;
+}
+
+
+
 @media (max-width: 767.98px) {
   .team-area {
     padding: 100px 0 70px;
@@ -14664,12 +14830,12 @@ blockquote p {
   width: 65px;
   transition: 0.3s linear;
 }
-.card-testimonials .card-info {
+/* .card-testimonials .card-info {
   background-image: url(../img/home8/quote.svg);
   background-position: top right;
   background-repeat: no-repeat;
   padding: 10px 0px;
-}
+} */
 .card-testimonials .card-info .card-position {
   margin-bottom: 17px;
 }
