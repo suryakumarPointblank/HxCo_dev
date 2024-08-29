@@ -1700,7 +1700,7 @@ textarea {
   font-weight: 500;
   text-transform: capitalize;
   color: var(--tg-color-dark-blue);
-  padding: 42px 0px;
+  padding: 25px 0px;
   display: block;
   line-height: 1;
   position: relative;
@@ -9494,6 +9494,11 @@ textarea {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+@media screen and (min-width:991px) {
+    .display-sm{
+      display: none;
+    }
 }
 .testimonial__nav-two .testimonial-button-prev:hover {
   background: var(--tg-theme-secondary);
