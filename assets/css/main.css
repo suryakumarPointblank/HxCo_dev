@@ -2464,6 +2464,9 @@ textarea {
 .relative{
   position: relative;
 }
+.border-2{
+  /* border: 1px solid rgba(0,0,0,0.1); */
+}
 .w-screen{
   width: 100vw;
   width:100dvw;
