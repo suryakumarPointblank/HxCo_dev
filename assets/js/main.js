@@ -311,6 +311,36 @@ var swiper2 = new Swiper(".project-active", {
     },
 });
 
+
+/*=============================================
+	=          Testimonials             =
+=============================================*/
+// let testimonialsData ;
+// async function fetchTestimonials() {
+//     try {
+//         const response = await fetch('http://localhost:5000/readTestimonials/',{
+//             method : 'GET',
+//             headers : {
+//                 'Content-Type' : 'application/json',
+//             }
+//         })
+//       console.log(response.status);
+//       if(response.ok){
+        
+//       }
+      
+//     } catch (error) {
+//       console.error('Error:', error);
+//     }
+//   }
+
+
+// window.onload = function() {
+//     fetchTestimonials()
+// };
+
+
+
 /*=============================================
 	=          brand active              =
 =============================================*/
