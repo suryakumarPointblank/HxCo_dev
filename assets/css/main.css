@@ -2517,10 +2517,36 @@ textarea {
   height: 30px;
 }
 
+@media screen and (max-width: 800px) {
+  .px-10{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .py-10{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
 .px-10px{
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.px-10{
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.py-10{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bg-opacity{
+  background-color: rgba(0,0,0,0.4);
+}
+
 
 /* Values  */
 .value-1 {
