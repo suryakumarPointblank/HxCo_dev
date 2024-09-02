@@ -2458,6 +2458,12 @@ textarea {
 .flex-row{
   flex-direction: row;
 }
+@media screen and (min-width:667px) {
+  .sm-flex-row{
+     flex-direction: row !important;
+  }
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -2485,6 +2491,11 @@ textarea {
 }
 .mil-thin{
   font-weight: 300;
+}
+
+.py-50px{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 }
 
 .mb-120{
@@ -11056,7 +11067,7 @@ textarea {
 }
 @media (max-width: 767.98px) {
   .blog__post-area-three {
-    padding: 250px 0 70px;
+    padding: 20px 0 70px;
   }
 }
 .blog__post-area-four {
@@ -11180,7 +11191,7 @@ textarea {
 }
 .blog__post-thumb-two img {
   width: 100%;
-  height: 250px;
+  height: auto;
   object-fit: cover;
 }
 .blog__post-thumb-three {
