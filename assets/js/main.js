@@ -479,8 +479,47 @@
     // Call the fetchBlogs function when the page loads
     // document.addEventListener('DOMContentLoaded', fetchBlogs);
     
+    /*=============================================
+        =          Contact Us Form            =
+    =============================================*/
 
-
+    $('#contact-form').on('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+    
+        // Collect form data
+        var formData = {
+            message: $('textarea[name="message"]').val(),
+            name: $('input[name="name"]').val(),
+            email: $('input[name="email"]').val(),
+            phone: $('input[name="phone"]').val()
+        };
+        console.log("contact form data= ", formData);
+    
+        // Send data using fetch
+        fetch('https://hxcobackend-btbqasa5bxhbgagq.southeastasia-01.azurewebsites.net/saveContactData', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Handle success - update the UI or show a success message
+            $('.ajax-response').text('Thank you for your message! We will get back to you soon.');
+        })
+        .catch(error => {
+            // Handle error - update the UI or show an error message
+            console.error('There was a problem with the fetch operation:', error);
+            $('.ajax-response').text('Something went wrong. Please try again later.');
+        });
+    });
+    
 
 
 
