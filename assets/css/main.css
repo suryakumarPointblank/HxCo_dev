@@ -2505,6 +2505,16 @@ textarea {
   margin-top:120px;
 }
 
+.mb-40px{
+  margin-bottom: 40px;
+}
+.mb-20px{
+  margin-bottom: 20px;
+}
+.mr-0{
+  margin-right: 0px !important;
+}
+
 .text-white{
   color: white !important;
 }
@@ -2526,6 +2536,9 @@ textarea {
 }
 .h-30px{
   height: 30px;
+}
+.h-80px{
+  height: 80px;
 }
 
 @media screen and (max-width: 800px) {
@@ -9540,6 +9553,12 @@ textarea {
       display: none;
     }
 }
+@media screen and (max-width:991px) {
+  .display-sm-none{
+    display: none;
+  }
+}
+
 .testimonial__nav-two .testimonial-button-prev:hover {
   background: var(--tg-theme-secondary);
   border-color: var(--tg-theme-secondary);
