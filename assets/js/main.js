@@ -218,6 +218,24 @@
         },
     });
 
+    var swiper3 = new Swiper(".slider-partners", {
+        spaceBetween: 0,
+        loop: true,
+        slidesPerView: 2,
+        speed: 3000,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+            nextEl: '.project-button-next',
+            prevEl: '.project-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination-partners',
+            clickable: true,
+        },
+    });
+
 
     /*=============================================
         =          brand active              =
